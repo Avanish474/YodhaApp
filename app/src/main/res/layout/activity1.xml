@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#973961"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+      <Button
+
+          android:id="@+id/id1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="30dp"
+          android:textColor="#FFFFFF"
+         android:layout_marginTop="350dp"
+          android:textAllCaps="false"
+          android:textSize="20dp"
+          android:layout_marginLeft="30dp"
+          android:background="@drawable/border"
+          android:layout_marginRight="30dp"
+          android:text="I'm not a breast cancer patient"
+          />
+        <Button
+            android:id="@+id/id2"
+            android:layout_below="@id/id1"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border"
+            android:layout_height="wrap_content"
+            android:text="I'm a breast cancer patient"
+            />
+        <Button
+            android:id="@+id/id3"
+            android:layout_below="@id/id2"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:layout_marginBottom="95dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border"
+            android:layout_height="wrap_content"
+            android:text="I'm a Survivor"
+            />
+        <Button
+            android:layout_below="@id/id3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next  >    "
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="25dp"
+            android:paddingTop="0dp"
+            android:textSize="18dp"
+
+            android:background="@drawable/border"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
