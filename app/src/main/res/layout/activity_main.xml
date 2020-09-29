@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B1036B"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
@@ -30,12 +31,14 @@
 
     <EditText
         android:id="@+id/editTextTextEmailAddress3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="36dp"
         android:layout_height="wrap_content"
         android:ellipsize="middle"
         android:ems="10"
-
-        android:hint="@      Enter  Email"
+        android:textSize="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint="    @      Enter Email"
         android:inputType="textEmailAddress"
         android:textColor="#FBF8F8"
         android:textColorHighlight="#F6F3F3"
@@ -49,8 +52,13 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="20dp"
         android:text="Select this if you want us to send you articles/stories from survivors about breast cancer."
         android:textColor="#FAF6F6"
+        android:layout_marginLeft="50dp"
+        android:textSize="16dp"
+        android:buttonTint="#FFFFFF"
+        android:layout_marginRight="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,13 +69,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="58dp"
-        android:background="@drawable/button_border"
-
-        android:text="Next >"
+        android:background="@drawable/border"
+        android:textSize="18dp"
+        android:text="Next  >    "
+        android:paddingLeft="25dp"
+        android:paddingTop="0dp"
         android:textColor="#FDFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
 
 </android.support.constraint.ConstraintLayout>
