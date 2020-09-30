@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#973961"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What was your breast cancer stage and last time you went to diagnose"
+            android:textColor="#FFFFFF"
+            android:textSize="26dp"
+            android:padding="5dp"
+            android:layout_marginTop="258dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+        <AutoCompleteTextView
+            android:id="@+id/stages"
+            android:layout_below="@id/text"
+            android:hint="Stage I"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:textColorHint="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></AutoCompleteTextView>
+        <Button
+            android:id="@+id/date"
+            android:layout_below="@id/stages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="         Pick Date        "
+           android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/border"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"/>
+        <Button
+            android:layout_below="@id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      Next    >    "
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:textSize="18dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/border"/>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>
