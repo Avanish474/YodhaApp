@@ -1,7 +1,9 @@
 package com.example.yodha;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -11,16 +13,17 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+
 public class QuizActivity extends AppCompatActivity {
     public ArrayList<String> questions;
     public TextView question;
-    public int i = 0;
+    public static int i = 0;
     public Button next;
     public Button previous;
     public RadioButton radioButton1;
     public RadioButton radioButton2;
-    public RadioButton radioButton;
-    public boolean[] arr;
+    public static String[] arr ;
+
     public RadioGroup radioGroup;
     public RadioButton selectedRadioButton;
 
@@ -28,8 +31,9 @@ public class QuizActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sample_quiz_view);
+
         question = findViewById(R.id.textView2);
-        next = findViewById(R.id.Next);
+        next = (Button)findViewById(R.id.Next);
         previous = findViewById(R.id.Previous);
         radioButton1 = findViewById(R.id.radioButton1);
         radioButton2 = findViewById(R.id.radioButton2);
@@ -44,8 +48,9 @@ public class QuizActivity extends AppCompatActivity {
         questions.add(getString(R.string.question_6));
         questions.add(getString(R.string.question_7));
         questions.add(getString(R.string.question_8));
-        arr = new boolean[questions.size()];
 
+
+        arr = new String[questions.size()];
         question.setText(questions.get(0));
 
 
@@ -60,17 +65,29 @@ public class QuizActivity extends AppCompatActivity {
                 selectedRadioButton = (RadioButton) findViewById(selectedId);
                 if (radioGroup.getCheckedRadioButtonId() == -1) {
                     Toast.makeText(QuizActivity.this, "No answer selected", Toast.LENGTH_SHORT).show();
-                } else {
-                    if (i < questions.size()) {
-                        question.setText(questions.get(++i));
 
-                    } else if (i >= questions.size()) {
+
+                } else {
+                    i++;
+                    if (i < questions.size()-1) {
+                        question.setText(questions.get(i));
+
+
+                    }else if(i >= questions.size()-1 && i<questions.size()) {
+
+                        next.setText("Finish Quiz");
+                        question.setText(questions.get(i));
+                    }
+                    else if (i >= questions.size()) {
                         Toast.makeText(QuizActivity.this, "No further Question ahead", Toast.LENGTH_LONG).show();
+                       
                     }
                     boolean result = false;
                     result = (radioButton1.isChecked()) ? true : false;
-                    arr[i] = result;
-                    Toast.makeText(QuizActivity.this, Boolean.toString(arr[i]), Toast.LENGTH_SHORT).show();
+
+
+                    //Toast.makeText(QuizActivity.this, Boolean.toString(arr[i]), Toast.LENGTH_SHORT).show();
+
 
                     radioGroup.clearCheck();
 
@@ -86,14 +103,17 @@ public class QuizActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.radioButton1:
                 if (checked)
-                    str = "yes";
+                {   str = "yes";
+                    arr[i]=str;}
                 break;
             case R.id.radioButton2:
                 if (checked)
-                    str = "No";
+                {  str = "No";
+                arr[i]=str;}
                 break;
 
         }
         Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
     }
 }
+
