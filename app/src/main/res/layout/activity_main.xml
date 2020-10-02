@@ -1,84 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B1036B"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:shadowColor="#1C0909"
-        android:text="Y O D H A"
-        android:textAlignment="center"
-
-        android:textAppearance="@style/Widget.AppCompat.Button.Borderless"
-        android:textColor="#FB8BCF"
-        android:textSize="24sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="217dp"
+        android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="47dp"
-        tools:text="YODHA" />
+        tools:layout_editor_absoluteY="33dp" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress3"
         android:layout_width="match_parent"
-        android:layout_margin="36dp"
         android:layout_height="wrap_content"
-        android:ellipsize="middle"
-        android:ems="10"
-        android:textSize="20dp"
+        android:layout_margin="36dp"
         android:backgroundTint="#FFFFFF"
+        android:ems="10"
         android:hint="    @      Enter Email"
         android:inputType="textEmailAddress"
-        android:textColor="#FBF8F8"
         android:textColorHighlight="#F6F3F3"
         android:textColorHint="#FAF6F6"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.236" />
 
     <CheckBox
         android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="20dp"
+        android:layout_width="322dp"
+        android:layout_height="148dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginRight="20dp"
+        android:buttonTint="#FFFFFF"
+        android:fontFamily="@font/sen_regular"
+        android:paddingLeft="15dp"
         android:text="Select this if you want us to send you articles/stories from survivors about breast cancer."
         android:textColor="#FAF6F6"
-        android:layout_marginLeft="50dp"
         android:textSize="16dp"
-        android:buttonTint="#FFFFFF"
-        android:layout_marginRight="20dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress3" />
+        app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress3"
+        app:layout_constraintVertical_bias="0.319" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="58dp"
+        android:layout_marginBottom="35dp"
         android:background="@drawable/border"
-        android:textSize="18dp"
-        android:text="Next  >    "
         android:paddingLeft="25dp"
         android:paddingTop="0dp"
+        android:text="Next  >    "
         android:textColor="#FDFCFC"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="1.0" />
 
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
