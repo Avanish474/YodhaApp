@@ -8,4 +8,15 @@
     <string name="question_6">6- Do you have nipple discharge other than breast milk, including blood ?</string>
     <string name="question_7">7- Do you have any change in the size or shape of the breast ?</string>
     <string name="question_8">8- Are you suffering in the pain area of the breast ?</string>
+
+    <string name="sta">Stage I</string>
+    <string-array name="stages_arrays">
+        <item>Stage I</item>
+        <item>Stage II</item>
+        <item>Stage III</item>
+        <item>Stage IV</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
