@@ -6,42 +6,41 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FFFFFF"
-   >
-<include
-    layout="@layout/toolbar"/>
+    >
+    <include
+        layout="@layout/toolbar"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#973961"
-        android:layout_marginBottom="50dp">
+        android:background="#973961">
         <TextView
-        android:id="@+id/text"
-        android:textAlignment="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Feeling lonely..? Try talking to a stranger just like you. Maybe it will make you feel better or maybe you can help someone by hearing to them  :) "
-        android:textSize="23dp"
-        android:fontFamily="@font/sen"
-        android:layout_marginTop="45dp"
+            android:id="@+id/text"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feeling lonely..? Try talking to a stranger just like you. Maybe it will make you feel better or maybe you can help someone by hearing to them  :) "
+            android:textSize="23dp"
+            android:fontFamily="@font/sen"
+            android:layout_marginTop="47dp"
             android:textColor="#FFFFFF"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"/>
-    <Button
-        android:id="@+id/call"
-        android:layout_marginTop="46dp"
-        android:layout_below="@id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Call  "
-        android:fontFamily="@font/sen_regular"
-        android:layout_centerHorizontal="true"
-        android:textAllCaps="false"
-        android:paddingLeft="42dp"
-        android:paddingRight="22dp"
-        android:drawableRight="@drawable/ic_call"
-        android:textColor="#FFFFFF"
-        android:background="@drawable/button_border"
-        android:textSize="20dp"/>
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+        <Button
+            android:id="@+id/call"
+            android:layout_marginTop="46dp"
+            android:layout_below="@id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call  "
+            android:fontFamily="@font/sen_regular"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:paddingLeft="42dp"
+            android:paddingRight="22dp"
+            android:drawableRight="@drawable/ic_call"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_border"
+            android:textSize="20dp"/>
 
         <TextView
             android:id="@+id/note"
@@ -73,7 +72,7 @@
             android:text="Kindly help us out to gather data on breast cancer by filling this survey"
             />
         <Button
-           android:layout_below="@id/survey"
+            android:layout_below="@id/survey"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Take Survey     "
