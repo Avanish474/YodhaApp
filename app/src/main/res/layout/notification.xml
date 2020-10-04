@@ -75,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Dont have a follow-up Care plan?.. Talk to our experts to get more guidance by clicking on the call button below."
+            android:text="Don you want some help?.. Talk to our experts to get more guidance by clicking on the call button below."
             android:textSize="17dp"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
