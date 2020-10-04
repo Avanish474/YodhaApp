@@ -106,15 +106,15 @@
             android:layout_height="wrap_content"
             android:textColor="#FFFFFF"
             android:textAllCaps="false"
-            android:paddingTop="14dp"
-            android:paddingBottom="14dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
             android:layout_marginTop="34dp"
             android:textSize="20dp"
             android:fontFamily="@font/sen"
             android:layout_marginLeft="20dp"
             android:background="@drawable/border"
             android:layout_marginRight="20dp"
-            android:text="Your follow-up Care Plan"
+            android:text="Life after Breast Cancer"
             />
         <TextView
             android:id="@+id/text2"
