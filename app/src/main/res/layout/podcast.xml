@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+    <include
+        layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#732F48"
+           >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:padding="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border_podcast">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/podcast1"
+            />
+
+<TextView
+    android:layout_toRightOf="@id/image1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="how i survived breast cancer"
+    android:textSize="18dp"
+    android:layout_marginLeft="20dp"
+    android:textColor="#FFFFFF"
+    android:fontFamily="@font/sen_regular"
+    />
+
+        <SeekBar
+            android:id="@+id/seek1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:thumb="@drawable/thumb"
+
+           />
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seek1"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_play_circle_outline_black_24dp"
+            android:drawableRight="@drawable/ic_pause_circle_outline_black_24dp"
+           />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:padding="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border_podcast">
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/podcast2"
+            />
+
+        <TextView
+android:layout_toRightOf="@id/image2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="how i survived breast cancer"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/sen_regular"
+            />
+
+        <SeekBar
+            android:id="@+id/seek2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:thumb="@drawable/thumb"
+
+            />
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seek2"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_play_circle_outline_black_24dp"
+            android:drawableRight="@drawable/ic_pause_circle_outline_black_24dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:padding="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border_podcast">
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/podcast3"
+            />
+
+        <TextView
+android:layout_toRightOf="@id/image3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="how i survived breast cancer"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/sen_regular"
+            />
+
+        <SeekBar
+            android:id="@+id/seek3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:thumb="@drawable/thumb"
+
+            />
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seek3"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_play_circle_outline_black_24dp"
+            android:drawableRight="@drawable/ic_pause_circle_outline_black_24dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:padding="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border_podcast">
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/podcast4"
+            />
+
+        <TextView
+android:layout_toRightOf="@id/image4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="how i survived breast cancer"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/sen_regular"
+            />
+
+        <SeekBar
+            android:id="@+id/seek4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:thumb="@drawable/thumb"
+
+            />
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seek4"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_play_circle_outline_black_24dp"
+            android:drawableRight="@drawable/ic_pause_circle_outline_black_24dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:padding="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/border_podcast">
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/podcast5"
+            />
+
+        <TextView
+android:layout_toRightOf="@id/image5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="how i survived breast cancer"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/sen_regular"
+            />
+
+        <SeekBar
+            android:id="@+id/seek5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:thumb="@drawable/thumb"
+
+            />
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seek5"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_play_circle_outline_black_24dp"
+            android:drawableRight="@drawable/ic_pause_circle_outline_black_24dp"
+            />
+
+    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
